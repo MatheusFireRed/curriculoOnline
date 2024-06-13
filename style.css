@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+    --fonte-principal: "Montserrat", sans-serif;
+
+    --fundo-main: rgba(0, 0, 0, 0.904);
+    --fundo-header: linear-gradient(to right, black, gray);
+    --cor-card-foto: white;
+    --cor-card-informacoes: rgba(0, 0, 0, 0.493);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+}
+
+header{
+    width: 99vw;
+    height: 150px;
+    background-image: var(--fundo-header);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid white ;
+}
+
+.redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.img-redes-sociais{
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    border-radius: 15px;
+    padding: 0px;
+}
+
+.img-redes-sociais:hover{
+    padding: 5px;
+    transition: 0.5s;
+    background-color: rgba(128, 128, 128, 0.404);
+    border: 1px solid white;
+    width: 60px;
+    height: 60px;
+}
+.redes-sociais ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;    
+}
+
+
+.item-menu a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: 0.5s;
+}
+
+.item-menu a:hover{
+    font-size: 26px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+main{
+    width: 99vw;
+    height: 1200px;
+    display: block;
+}
+
+.hero{
+    height: 100%;
+    background-color: var(--fundo-main);
+    padding: 40px;
+}
+
+
+.conteudo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.informacoes h1{
+    text-align: center;
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+.informacoes{
+    width: 40%;
+    text-align: justify;
+    border-radius: 40px;
+    padding: 20px;
+    color: white;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+.foto{
+    width: 40%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+}
+
+.foto img{
+    border-radius: 40px;
+    width: 95%;
+    height: 525px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .hero{
+        padding: 40px 0 0 0 ;
+    }
+
+    .conteudo{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .informacoes{
+        width: 300px;
+    }
+
+    .foto img{
+        width: 300px;
+        height: 400px;
+    }
+
+    .redes-sociais{
+        display: none;
+    }
+    
+    .menu{
+        display: none;
+    }
+}
