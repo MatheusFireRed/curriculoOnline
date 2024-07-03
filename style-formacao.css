@@ -1,0 +1,50 @@
+.menu-img{
+    width: 70px;
+}
+
+.titulo{
+    color: white;
+    font-size: 1.9rem;
+}
+
+.menu-itens{
+    display: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.menu-itens a {
+    
+    text-decoration: none;
+}
+
+.menu-formacao{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 50%;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.menu-formacao:hover > .menu-itens{
+    display: flex;
+    transition: 1s;
+}
+
+.cabecalho-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+    transition: 6s;
+}
+
+
+.titulo-curso{
+    color: white;
+    font-size: 1rem;
+}
