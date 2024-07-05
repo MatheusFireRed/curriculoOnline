@@ -1,14 +1,28 @@
 .hero{
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 15px;
     
 }
 
+.menus{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
 .menu-img{
-    width: 70px;
+    width: 50px;
+}
+
+.dois-img-menu{
+    display: flex;
 }
 
 .titulo{
@@ -17,17 +31,25 @@
 }
 
 .menu-itens{
-    width: 100%;
     display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
     border: 1px solid white;
-    padding: 10px 0;
+    padding: 10px;
     border-radius: 30px;
     margin-top: 10px;
-    justify-content: space-around;
 }
 
 .menu-itens h2{
     width: 70%;
+    font-size: 0.5rem;
+    
+}
+
+.menu-itens h3{
+    color: white;
+    font-size: 0.5rem;
 }
 
 .menu-itens:hover{
@@ -35,7 +57,10 @@
 }
 
 .menu-itens a {
-    
+    width: 20%;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -43,27 +68,76 @@
     display: flex;
     flex-direction: column;
     border: 1px solid white;
-    width: 70%;
-    padding: 5px;
+    width: 100%;
+    padding: 10px 0;
     border-radius: 30px;
-
+    align-items: center;
 }
 
 .menu-formacao:hover > .menu-itens{
+    transition: 2s;
     display: flex;
-    transition: 1s;
+    
 }
 
 .cabecalho-menu{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 60px;
-    transition: 6s;
+    gap: 20px;
 }
 
 
 .titulo-curso{
     color: white;
     font-size: 1rem;
+}
+
+.descricao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+}
+
+.descricao p{
+    color: white;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+
+@media screen and (max-width: 750px){
+
+    .hero{
+        flex-direction: column-reverse;
+
+    }
+
+    .menus{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-formacao{
+        width: 90%;
+    }
+
+    .menu-img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .titulo{
+        font-size: 18px;
+    }
+
+    .descricao{
+        width: 90%;
+    }
 }
