@@ -1,0 +1,162 @@
+:root{
+        --cor-fundo: wheat;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+main{
+    width: 100%;
+}
+
+.saudacao-divisor{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.saudacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.saudacao-divisor img{
+  width: 30% ;
+}
+
+.coluna-dupla{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.coluna{
+    height: 90%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.coluna-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#coluna-texto_top{
+  width: 100%;
+  overflow: hidden;
+}
+
+.coluna img{
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.coluna p {
+    font-size: .9rem;
+    text-align: justify;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+#coluna-link-curriculo{
+    width: 90%;
+    padding: 20px;
+    background-color: black;
+    border-radius: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#coluna-link-curriculo a{
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer{
+  width: 100%;
+  height: 40px;
+  color: black;
+}
+
+.floating-image {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Posição inicial e final */
+    }
+    50% {
+      transform: translateY(-20px); /* Posição flutuante */
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    
+    .nav-list{
+      margin-top: 30px;
+    }
+
+    .coluna-dupla{
+        margin-top: 160px;
+        flex-direction: column;
+        gap: 150px;
+    }
+
+    .coluna{
+        width: 90%;
+    }
+
+    .coluna p {
+      width: 85%;
+      font-size: 14px;
+    }
+
+    #coluna-texto-top{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #coluna-link-curriculo{
+      width: 80%;
+    }
+
+    .coluna img{
+      width: 80%;
+    }
+
+    .floating-image {
+        animation: float-mobile 3s ease-in-out infinite;
+        margin-top: 100px;
+      }
+    
+      @keyframes float-mobile {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px); /* Movimento menor para telas menores */
+        }
+      }
+
+
+}
