@@ -1,5 +1,7 @@
+@import url('style-projetos.css');
+
 :root{
-        --cor-fundo: wheat;
+        --cor-fundo: rgb(156, 156, 156);
 }
 
 body{
@@ -25,6 +27,7 @@ main{
     align-items: center;
     justify-content: center;
     margin: 40px 0;
+
 }
 
 .saudacao-divisor img{
@@ -67,10 +70,27 @@ main{
 }
 
 .coluna p {
-    font-size: .9rem;
+    font-size: 1.3rem;
     text-align: justify;
     font-weight: 500;
     overflow: hidden;
+    font-weight: 600;
+}
+
+.texto-coluna{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 1.3rem;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.texto-2{
+
+  opacity: 0;
+  transition: opacity  2s ease-in-out;
 }
 
 #coluna-link-curriculo{
@@ -141,7 +161,7 @@ footer{
     }
 
     .coluna img{
-      width: 80%;
+      width: 70%;
     }
 
     .floating-image {
