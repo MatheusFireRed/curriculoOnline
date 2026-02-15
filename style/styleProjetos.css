@@ -1,0 +1,20 @@
+main{
+
+    border: solid 1px red;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-menu-projetos{
+    border: solid 1px yellow;
+    width: 20%;
+    height: 500px;
+
+}
+.box-projetos{
+
+    border: solid 1px green;
+    width: 60%;
+    height: 500px;
+}

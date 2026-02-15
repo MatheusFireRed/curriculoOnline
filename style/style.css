@@ -79,6 +79,8 @@ header{
 .box-redes-sociais ul{
     width: 100%;
     display: flex;
+    gap: 15px;
+    justify-content: center;
 }
 
 .box-redes-sociais ul li{
