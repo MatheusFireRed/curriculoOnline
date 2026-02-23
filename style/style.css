@@ -4,9 +4,9 @@
 :root{
 
     --fonte-principal: "Montserrat", sans-serif;
-    --cor-header: #255F38;
-    --cor-de-fundo: #18230F;
-    --cor-footer: #1F7D53;
+    --cor-header: #44A194;
+    --cor-de-fundo: #F4F0E4;
+    --cor-footer: #537D96;
 
 }
 
@@ -15,6 +15,7 @@
     padding: 0;
     overflow-x: hidden;
     font-family: var(--fonte-principal);
+    box-sizing: border-box;
 }
 
 a{
@@ -119,7 +120,7 @@ main{
 
 .texto1 p{
     text-align: justify;
-    color: wheat;
+    color: maroon;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.7;

@@ -1,9 +1,8 @@
 main{
 
     border: solid 1px red;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
+    gap: 0;
 }
 
 .box-menu-projetos{
@@ -15,6 +14,22 @@ main{
 .box-projetos{
 
     border: solid 1px green;
-    width: 60%;
+    width: 75%;
     height: 500px;
+}
+
+.box-filtro, .box-submenu-projetos{
+    width: 100%;
+}
+
+.box-filtro{
+    border: 1px solid orange;
+    height: 50px;
+}
+
+.box-submenu-projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

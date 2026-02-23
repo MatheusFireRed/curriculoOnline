@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Curricular - Matheus de Oliveira Timotheo</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <?php
+        include 'generic/menuHorizontal.php';
+    ?>
+    
+    <main>
+        <div class="linha">
+            <div class="coluna2">
+                <img class="fade-up" src="img/FotoPrincipal1.jpeg" alt="Foto de Matheus de Oliveira Timotheo." id="ImagemPrincipal">
+            </div>
+            <div class="coluna2 texto1 fade-up">
+                <p>Meu nome é Matheus de Oliveira Timotheo, tenho 30 anos e sou estudante de Análise e Desenvolvimento de Sistemas, atualmente cursando o último período, com previsão de conclusão em junho de 2026. Possuo conhecimentos em HTML, CSS, JavaScript, Python e SQL, com foco no desenvolvimento de soluções eficientes e bem estruturadas. Tenho grande interesse em tecnologia, aprendizado contínuo e em aplicar meus conhecimentos na prática por meio de projetos e desafios reais.</p>
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="coluna2 texto1 fade-up">
+                <p>Nesta página você encontrará informações sobre minha formação acadêmica, certificações, projetos desenvolvidos e experiências práticas na área de tecnologia. Também disponibilizo links para minhas redes sociais e canais de contato, facilitando a troca de ideias, parcerias e oportunidades profissionais. Este espaço foi criado para compartilhar minha evolução na área de desenvolvimento e demonstrar, na prática, meus conhecimentos e interesses.</p>
+            </div>
+            <div class="coluna2" id="texto1">
+                <img class="fade-up" id="imgSecundaria" src="img/imagemIlustrativa1.png" alt="Imagem ilustrativa. Homem progeamando." class="imagemIlustrativa">
+            </div>
+        </div>
+
+        <script src="js/fadeinElementos.js"></script>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
