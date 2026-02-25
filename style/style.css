@@ -1,182 +1,153 @@
-@import url('style-projetos.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root{
-        --cor-fundo: rgb(156, 156, 156);
+
+    --fonte-principal: "Montserrat", sans-serif;
+    --cor-header: #44A194;
+    --cor-de-fundo: #F4F0E4;
+    --cor-footer: #537D96;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--fonte-principal);
+}
+
+a{
+    text-decoration: none;
+}
+
+body, .linha, .box-header, .box-menu, .box-menu ul, .box-redes-sociais, main, #texto1, .coluna2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 body{
-    background-color: var(--cor-fundo);
+    width: 100vw;
+    flex-wrap: wrap;
+    background-color: var(--cor-de-fundo);
+}
+
+header, footer, .box-header{
+    width: 100%;
+}
+
+.box-header, .box-menu, .box-redes-sociais{
+    height: 100%;
+}
+
+header{
+    height: 150px;
+    margin-bottom: 50px;
+    background-color: var(--cor-header);
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+.box-header{
+    
+}
+
+.box-menu, .box-redes-sociais{
+    width: 50%;
+}
+
+.box-menu ul{
+    gap: 30px;
+}
+
+.box-menu ul li{
+    outline: none;
+}
+
+.box-menu ul li a {
+    font-weight: 600;
+    color: wheat;
+    transition: ease-in-out .5s;
+
+}
+
+.box-menu ul li a:hover{
+    font-size: 22px;
+}
+
+.box-redes-sociais ul{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.box-redes-sociais ul li{
+    width: 55px;
+    height: 55px;
+    scrollbar-width: none;
+}
+
+.img-redes-sociais{
+    width: 99%;
 }
 
 main{
     width: 100%;
+    flex-direction: column;
+    gap: 100px;
 }
 
-.saudacao-divisor{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.saudacao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
-
-}
-
-.saudacao-divisor img{
-  width: 30% ;
-}
-
-.coluna-dupla{
-    display: flex;
+.linha{
     width: 100%;
+    /*border: 1px solid gray;*/
+    gap: 20px;
+}
+
+.coluna2{
+    width: 45%;
     height: 400px;
-    align-items: center;
-    justify-content: center;
+    /*border: 1px solid red;*/
+    overflow-y: hidden;
 }
 
-.coluna{
-    height: 90%;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    
+#ImagemPrincipal{
+    height: 99%;
+    border-radius: 360px;
 }
 
-.coluna-flex{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#coluna-texto_top{
-  width: 100%;
-  overflow: hidden;
-}
-
-.coluna img{
-    width: 70%;
-    height: 100%;
-    border-radius: 20px;
-}
-
-.coluna p {
-    font-size: 1.3rem;
+.texto1 p{
     text-align: justify;
+    color: maroon;
     font-weight: 500;
-    overflow: hidden;
-    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.7;
 }
 
-.texto-coluna{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  font-size: 1.3rem;
-  text-align: justify;
-  font-weight: 600;
+.imagemIlustrativa{
+    height: 100%;
 }
 
-.texto-2{
-
-  opacity: 0;
-  transition: opacity  2s ease-in-out;
-}
-
-#coluna-link-curriculo{
-    width: 90%;
-    padding: 20px;
-    background-color: black;
-    border-radius: 30px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-#coluna-link-curriculo a{
-  width: 100%;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
 
 footer{
-  width: 100%;
-  height: 40px;
-  color: black;
+    height: 100px;
+    background-color: var(--cor-footer);
+    margin-top: 50px;
 }
 
-.floating-image {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
-    animation: float 3s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0); /* Posição inicial e final */
-    }
-    50% {
-      transform: translateY(-20px); /* Posição flutuante */
-    }
-  }
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  overflow-y: hidden;
+}
 
-@media screen and (max-width: 700px) {
-    
-    .nav-list{
-      margin-top: 30px;
-    }
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-    .coluna-dupla{
-        margin-top: 160px;
-        flex-direction: column;
-        gap: 150px;
-    }
-
-    .coluna{
-        width: 90%;
-    }
-
-    .coluna p {
-      width: 85%;
-      font-size: 14px;
-    }
-
-    #coluna-texto-top{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    #coluna-link-curriculo{
-      width: 80%;
-    }
-
-    .coluna img{
-      width: 70%;
-    }
-
-    .floating-image {
-        animation: float-mobile 3s ease-in-out infinite;
-        margin-top: 100px;
-      }
-    
-      @keyframes float-mobile {
-        0%, 100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px); /* Movimento menor para telas menores */
-        }
-      }
-
-
+#imgSecundaria{
+    width: 80%;
 }
