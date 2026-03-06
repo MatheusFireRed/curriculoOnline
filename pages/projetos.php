@@ -30,8 +30,71 @@
             <button id="btnFiltro"><img src="http://localhost/paginapessoal/img/caret-down.svg" alt="Seta para abaixar o filtro." width="40px"></button>
         </div>
 
+        <div class="filtro">
+            <label>
+                <input type="checkbox" value="python"><img src="../img/icons/icons8-python-48.png" alt="Filtrar para python.">
+            </label>
+            
+            <label>
+                <input type="checkbox" value="html"> <img src="../img/icons/icons8-html-48.png" alt="Filtrar para HTML">
+            </label>
+
+            <label>
+                <input type="checkbox" value="css"> <img src="../img/icons/icons8-css-48.png" alt="Filtrar para CSS.">
+            </label>
+
+            <label>
+                <input type="checkbox" value="javascript"><img src="../img/icons/icons8-javascript-48.png" alt="Filtrar para JavaScript.">
+
+            <label>
+                <input type="checkbox" value="sql"> <img src="../img/icons/icons8-sql-48.png" alt="Filtrar para SQL.">
+            </label>
+        </div>
+
         <div class="box-projetos">
             
+            <!-- PASSAR PARA A PÁGINA DE STYLE !-->
+            <style>
+            .card-projeto{
+                border: 1px solid green;
+                width: 250px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+            }
+            .img-projeto{
+                width: 90%;
+                height: 50%;
+                border: 1px solid yellow;
+            }
+            .informacoes-projeto{
+                width: 90%;
+                height: 50%;
+                border: 1px solid orange;
+            }
+
+            </style>
+
+            <div class="card-projeto">
+                <div class="img-projeto">
+
+                </div>
+                <div class="informacoes-projeto">
+                    <table>
+                        <tr>
+                            <td>Nome do projeto</td>
+                        </tr>
+                        <tr>
+                            <td>Status do projeto</td>
+                        </tr>
+                        <tr>
+                            <td>linguagens usadas no projeto</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
 
     </main>

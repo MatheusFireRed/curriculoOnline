@@ -1,0 +1,18 @@
+PENDÊNCIAS:
+    * Criar banco de dados para o projeto;
+    * Criar filto:
+        * Area de projetos;
+        * Area de certificações;
+    * Criar página de contato;
+    * Crair JS para expandir e retrair filtro;
+
+
+EM ANDAMENTO:
+    * Criar cards para projetos;
+
+
+FINALIZADAS:
+
+
+
+
