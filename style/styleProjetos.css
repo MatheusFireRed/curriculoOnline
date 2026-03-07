@@ -25,7 +25,75 @@ main{
 
 #btnFiltro{
     border: none;
-    overflow-y: hidden;
     cursor: pointer;
 }
+
+#btnFiltro img{
+    transition: transform .5 ease-in-out;
+}
+
+.container-linguagens{
+    display: none;
+    transition: all .5s ease-in-out;
+    
+}
+
+.container-linguagens.mostrar{
+    display: flex;
+}
+
+.img-linguagens{
+    width: 45px;
+    height: 45px;
+}
+
+.cb-linguagens{
+    background: none;
+    outline: none;
+}
+
+.checkbox-container{
+    cursor: pointer;
+    gap: 10px;
+    padding: 5px;
+}
+
+.checkbox-container input{
+    display: none;
+}
+
+.checkmark{
+    border-radius: 20px;
+    transition: ease-in-out .5s;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.checkbox-container input:checked + .checkmark{
+    background-color: #c0bdb3;
+    box-shadow: 1px 1px 5px 3px white;
+}
+
+.card-projeto{
+    border: 1px solid green;
+    width: 250px;
+    height: 300px;
+    flex-direction: column;
+    padding: 20px 0;
+    background-color: #c0bdb3;
+    border-radius: 20px;
+}
+.img-projeto{
+    width: 90%;
+    height: 50%;
+    border: 1px solid yellow;
+}
+.informacoes-projeto{
+    width: 90%;
+    height: 50%;
+    border: 1px solid orange;
+}
+
+
 
